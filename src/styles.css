@@ -30,15 +30,6 @@ button:hover {
   cursor: pointer;
 }
 
-.input-area {
-  background-color: #ffb300;
-  width: 400px;
-  height: 30px;
-  padding: 8px;
-  margin: 6px;
-  border-radius: 5px;
-}
-
 .incomplete-area {
   background-color: #ffecb3;
   width: 400px;

@@ -50,7 +50,13 @@ export const App = () => {
         todoText={todoText}
         onChange={onChangeTodoText}
         onClick={onClickAdd}
+        disabled={incompleteTodos.length >= 5}
       />
+      {incompleteTodos.length >= 5 && (
+        <p style={{ color: "tomato", fontSize: "1.5em", paddingLeft: "20px" }}>
+          You can register up to 5. Finish your TODO!{" "}
+        </p>
+      )}
       <IncompleteTodos
         todos={incompleteTodos}
         onClickComplete={onClickComplete}
